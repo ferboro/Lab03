@@ -9,44 +9,494 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="Start" sceneMemberID="viewController">
-                    <view key="view" alpha="0.90000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="ZEY-jb-kmN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1800"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mike_tyson.jpg" id="VmL-hO-fgr">
-                                <rect key="frame" x="20" y="33" width="109" height="118"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joe_louisM.jpg" id="kAr-Sa-og0">
-                                <rect key="frame" x="20" y="184" width="109" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chavez.jpg" id="pVF-KJ-atZ">
-                                <rect key="frame" x="20" y="352" width="109" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Henry_ArmstrongM.jpg" id="jiu-n3-9sA">
-                                <rect key="frame" x="20" y="526" width="109" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="U17-9h-hhx">
-                                <rect key="frame" x="0.0" y="0.0" width="325" height="624"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="pf2-Nj-E66">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1800"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="BLb-no-gm8">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1800"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boxing Legends" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="olz-OA-M3w">
+                                                <rect key="frame" x="25" y="23" width="271" height="66"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="39"/>
+                                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Henry_ArmstrongM.jpg" id="oD9-yu-Y4w" userLabel="Boxer1">
+                                                <rect key="frame" x="8" y="97" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="H03-vC-F4D" userLabel="ALive1">
+                                                <rect key="frame" x="137" y="116" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jne-eN-Opg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="1ZS-DC-Mhb" userLabel="Dead1">
+                                                <rect key="frame" x="137" y="184" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xL-Tn-fbf"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="Qbu-E7-MN4" userLabel="Answer1">
+                                                <rect key="frame" x="237" y="147" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jack_DempseyM.jpg" id="bku-44-sMz" userLabel="Boxer2">
+                                                <rect key="frame" x="8" y="252" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gqh-AW-B6c" userLabel="ALive2">
+                                                <rect key="frame" x="137" y="270" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tRf-iq-eri"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="iMQ-aX-evq" userLabel="Dead2">
+                                                <rect key="frame" x="137" y="337" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghR-vF-hFu"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="Vlr-w3-eYU" userLabel="Answer2">
+                                                <rect key="frame" x="237" y="302" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Muhammad_Ali.jpg" id="i1D-3G-Uza" userLabel="Boxer3">
+                                                <rect key="frame" x="8" y="407" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pkd-Ww-VfF" userLabel="ALive3">
+                                                <rect key="frame" x="137" y="423" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JyM-3B-tI9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="pF6-Mm-t3v" userLabel="Dead3">
+                                                <rect key="frame" x="137" y="491" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead3Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enP-Gg-3Vp"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="BdM-Mq-iZ8" userLabel="Answer3">
+                                                <rect key="frame" x="237" y="457" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rocky_MarcianoM.jpg" id="Bya-Kr-y4P" userLabel="Boxer4">
+                                                <rect key="frame" x="8" y="565" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rfn-Xp-4Vu" userLabel="ALive4">
+                                                <rect key="frame" x="137" y="583" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive4Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYD-4z-TVE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="3cs-P5-UPm" userLabel="Dead4">
+                                                <rect key="frame" x="137" y="646" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead4Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vj3-xG-bYs"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="tXv-6t-2wq" userLabel="Answer4">
+                                                <rect key="frame" x="237" y="615" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sugar_Ray_RobinsonM.jpg" id="9dG-u2-N7v" userLabel="Boxer5">
+                                                <rect key="frame" x="8" y="723" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="app-pc-The" userLabel="ALive5">
+                                                <rect key="frame" x="137" y="741" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive5Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfc-0z-3zK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Qur-Sc-uVm" userLabel="Dead5">
+                                                <rect key="frame" x="137" y="805" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead5Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IxH-Tg-T2X"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="TdS-mf-pj5" userLabel="Answer5">
+                                                <rect key="frame" x="237" y="773" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chavez.jpg" id="i5w-7e-LeP" userLabel="Boxer6">
+                                                <rect key="frame" x="8" y="879" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xAR-MI-72W" userLabel="ALive6">
+                                                <rect key="frame" x="137" y="898" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive6Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9dh-YF-ckT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ZQ5-th-iku" userLabel="Dead6">
+                                                <rect key="frame" x="137" y="961" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead6Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kpf-o3-yLz"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="p45-vb-cNU" userLabel="Answer6">
+                                                <rect key="frame" x="237" y="929" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="joe_louisM.jpg" id="vWF-3w-JXb" userLabel="Boxer7">
+                                                <rect key="frame" x="8" y="1035" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hlr-Nq-wa3" userLabel="ALive7">
+                                                <rect key="frame" x="137" y="1057" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lPR-Jc-xAY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="v8n-Pd-ula" userLabel="Dead7">
+                                                <rect key="frame" x="137" y="1119" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead7Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ET5-gX-t0M"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="6Yg-Wl-ypJ" userLabel="Answer7">
+                                                <rect key="frame" x="237" y="1085" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="juan_manuel_marquez.jpg" id="tQ7-ac-41A" userLabel="Boxer8">
+                                                <rect key="frame" x="8" y="1192" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="COj-f2-zbq" userLabel="ALive8">
+                                                <rect key="frame" x="137" y="1214" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive8Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KLe-Rt-n9j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="bMg-O9-KSw" userLabel="Dead8">
+                                                <rect key="frame" x="137" y="1273" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead8Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZNx-js-f1q"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="EcX-bC-Mau" userLabel="Answer8">
+                                                <rect key="frame" x="237" y="1242" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manny_pacquiao.jpg" id="UG2-za-99d" userLabel="Boxer9">
+                                                <rect key="frame" x="8" y="1351" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZPa-Eg-f3V" userLabel="ALive9">
+                                                <rect key="frame" x="137" y="1375" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive9Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Em-I3-eR1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="2tr-e3-gO0" userLabel="Dead9">
+                                                <rect key="frame" x="137" y="1427" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead9Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAp-v4-VoE"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="FyY-wt-TIB" userLabel="Answer9">
+                                                <rect key="frame" x="237" y="1401" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mike_tyson.jpg" id="AHz-qd-1gi" userLabel="Boxer10">
+                                                <rect key="frame" x="8" y="1511" width="112" height="139"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pI6-8h-UkO" userLabel="ALive10">
+                                                <rect key="frame" x="137" y="1529" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Alive"/>
+                                                <connections>
+                                                    <action selector="btnAlive10Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERb-qP-g9J"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" id="bah-S5-zlx" userLabel="Dead10">
+                                                <rect key="frame" x="137" y="1583" width="77" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="20"/>
+                                                <state key="normal" title="Dead"/>
+                                                <connections>
+                                                    <action selector="btnDead10Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ez-Oc-Y3D"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neutral.png" id="vyw-ZV-ZOo" userLabel="Answer10">
+                                                <rect key="frame" x="237" y="1561" width="43" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cH4-yw-gwc" userLabel="btnNext">
+                                                <rect key="frame" x="205" y="1680" width="106" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="26"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnNextPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ea6-0A-nNt"/>
+                                                    <segue destination="u3L-DC-3JT" kind="modal" identifier="btnNextSegue" id="aXe-s0-r0Z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WEo-ya-EQJ" userLabel="NextGood">
+                                                <rect key="frame" x="204" y="1680" width="107" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="26"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="ibh-Tz-CeZ" kind="modal" id="MpT-NZ-KLs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MIl-vg-Ezt" userLabel="NextBad">
+                                                <rect key="frame" x="204" y="1680" width="107" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="26"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="ER8-DX-9s0" kind="modal" id="gcb-Ay-gqe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="1800"/>
+                    <connections>
+                        <outlet property="btnAlive1" destination="H03-vC-F4D" id="aJl-hD-2y9"/>
+                        <outlet property="btnAlive10" destination="pI6-8h-UkO" id="jqX-EY-vwG"/>
+                        <outlet property="btnAlive2" destination="gqh-AW-B6c" id="n7n-gW-Gkb"/>
+                        <outlet property="btnAlive3" destination="Pkd-Ww-VfF" id="nxf-Pi-tXu"/>
+                        <outlet property="btnAlive4" destination="rfn-Xp-4Vu" id="2Wq-0d-jJw"/>
+                        <outlet property="btnAlive5" destination="app-pc-The" id="CwM-Hy-Gqa"/>
+                        <outlet property="btnAlive6" destination="xAR-MI-72W" id="itJ-oI-yJd"/>
+                        <outlet property="btnAlive7" destination="Hlr-Nq-wa3" id="Tuv-UJ-pl2"/>
+                        <outlet property="btnAlive8" destination="COj-f2-zbq" id="AhB-0f-kSh"/>
+                        <outlet property="btnAlive9" destination="ZPa-Eg-f3V" id="3Od-wq-l6c"/>
+                        <outlet property="btnDead1" destination="1ZS-DC-Mhb" id="Pbh-gw-GNm"/>
+                        <outlet property="btnDead10" destination="bah-S5-zlx" id="AQ4-9s-MsO"/>
+                        <outlet property="btnDead2" destination="iMQ-aX-evq" id="Zrg-TK-kl2"/>
+                        <outlet property="btnDead3" destination="pF6-Mm-t3v" id="o1y-IB-MeM"/>
+                        <outlet property="btnDead4" destination="3cs-P5-UPm" id="zlg-YX-rBP"/>
+                        <outlet property="btnDead5" destination="Qur-Sc-uVm" id="f7R-kG-l9a"/>
+                        <outlet property="btnDead6" destination="ZQ5-th-iku" id="AC7-w6-o7v"/>
+                        <outlet property="btnDead7" destination="v8n-Pd-ula" id="NrE-mj-E2N"/>
+                        <outlet property="btnDead8" destination="bMg-O9-KSw" id="Q0b-d8-Prh"/>
+                        <outlet property="btnDead9" destination="2tr-e3-gO0" id="0Ri-qb-yrm"/>
+                        <outlet property="btnNext" destination="cH4-yw-gwc" id="D1F-8g-X0I"/>
+                        <outlet property="btnNextBad" destination="MIl-vg-Ezt" id="2at-wL-B6Y"/>
+                        <outlet property="btnNextGood" destination="WEo-ya-EQJ" id="U6F-Je-UFD"/>
+                        <outlet property="imgAnswer1" destination="Qbu-E7-MN4" id="iFh-65-Q7V"/>
+                        <outlet property="imgAnswer10" destination="vyw-ZV-ZOo" id="JMk-mT-h7e"/>
+                        <outlet property="imgAnswer2" destination="Vlr-w3-eYU" id="QYa-Bg-l4b"/>
+                        <outlet property="imgAnswer3" destination="BdM-Mq-iZ8" id="1kN-n6-oZS"/>
+                        <outlet property="imgAnswer4" destination="tXv-6t-2wq" id="zcO-0F-NGe"/>
+                        <outlet property="imgAnswer5" destination="TdS-mf-pj5" id="DnM-NG-g0F"/>
+                        <outlet property="imgAnswer6" destination="p45-vb-cNU" id="eIW-fy-ikW"/>
+                        <outlet property="imgAnswer7" destination="6Yg-Wl-ypJ" id="plF-iN-QEl"/>
+                        <outlet property="imgAnswer8" destination="EcX-bC-Mau" id="nHx-gg-SC5"/>
+                        <outlet property="imgAnswer9" destination="FyY-wt-TIB" id="zgQ-pd-dsZ"/>
+                        <outlet property="scroll_view" destination="pf2-Nj-E66" id="DLf-dR-LDS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="153" y="257"/>
+            <point key="canvasLocation" x="141" y="-227"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6z3-S2-Vmh">
+            <objects>
+                <viewController id="u3L-DC-3JT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ll-g8-Vn5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ver_mas_bax.jpg" id="pJb-tj-yAG">
+                                <rect key="frame" x="12" y="120" width="337" height="479"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te hace falta ver mas BAX!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zcM-kj-9QZ">
+                                <rect key="frame" x="30" y="29" width="261" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tGo-k2-ta0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FvT-EE-gXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="-888"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fHi-5f-7Yh">
+            <objects>
+                <viewController id="ibh-Tz-CeZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uqq-jE-th2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy_bax.jpg" id="zdX-cJ-2OR">
+                                <rect key="frame" x="5" y="178" width="363" height="470"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are a BAX master!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Dwr-Un-a6k">
+                                <rect key="frame" x="20" y="81" width="274" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Dg-0t-JKR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="-251"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="l8M-pi-R8M">
+            <objects>
+                <viewController id="ER8-DX-9s0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gOY-pP-3vg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loser.jpg" id="U5N-Yi-Hjs">
+                                <rect key="frame" x="27" y="148" width="315" height="452"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loser!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vTx-fl-TtE">
+                                <rect key="frame" x="27" y="82" width="284" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <color key="textColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="che-F3-Iqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="710" y="403"/>
         </scene>
     </scenes>
     <resources>
         <image name="Henry_ArmstrongM.jpg" width="195" height="262"/>
+        <image name="Jack_DempseyM.jpg" width="454" height="594"/>
+        <image name="Muhammad_Ali.jpg" width="402" height="402"/>
+        <image name="Rocky_MarcianoM.jpg" width="657" height="600"/>
+        <image name="Sugar_Ray_RobinsonM.jpg" width="200" height="232"/>
         <image name="chavez.jpg" width="410" height="607"/>
+        <image name="happy_bax.jpg" width="735" height="900"/>
         <image name="joe_louisM.jpg" width="550" height="543"/>
+        <image name="juan_manuel_marquez.jpg" width="627" height="363"/>
+        <image name="loser.jpg" width="376" height="270"/>
+        <image name="manny_pacquiao.jpg" width="497" height="497"/>
         <image name="mike_tyson.jpg" width="516" height="697"/>
+        <image name="neutral.png" width="109" height="113"/>
+        <image name="ver_mas_bax.jpg" width="665" height="500"/>
     </resources>
 </document>
